@@ -102,7 +102,8 @@ $d = &$c; //a,b:refcount=3,is_ref=0,value=1;    c,d:refcount=1, is_ref=1, value=
     $b = $a;  
     $c = &$b;  
 ```
-执行过程中的内存结构图：
+执行过程中的内存结构图：  
+
 ![](http://orvwtnort.bkt.clouddn.com/201721343/1522829010513.png)
 
 当is_ref=0时，是非引用变量时，执行“非引用下的变量分离”
@@ -112,8 +113,11 @@ $d = &$c; //a,b:refcount=3,is_ref=0,value=1;    c,d:refcount=1, is_ref=1, value=
     $b = &$a;  
     $c = $b;  
 ```
-执行过程中的内存结构图：
+执行过程中的内存结构图：  
+
 ![](http://orvwtnort.bkt.clouddn.com/201721343/1522829055547.png)
+
+
 只有真正在需要改变变量的值时，
 回头在看(#2)代码，可以看到实际上，并没有产生新的变量，始终是$test_arr的变量在输出。所以，这也是为什么很少看到在PHP中使用引用方式传递变量，却仍然不会有性能问题的原因。
 
