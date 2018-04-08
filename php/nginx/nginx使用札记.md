@@ -329,8 +329,10 @@ server {
     }
 }
 ```
+
 这将设置一个服务器，将路由除静态图像以外的所有请求到运行在 `localhost:9000` 的 `FastCGI` 服务器。
+
 参考阅读
 -
-[你真的了解如何将 Nginx 配置为Web服务器吗](https://lufficc.com/blog/configure-nginx-as-a-web-server)
+[你真的了解如何将 Nginx 配置为Web服务器吗](https://lufficc.com/blog/configure-nginx-as-a-web-server)  
 [Nginx 使用札记](https://mp.weixin.qq.com/s?__biz=MzI4MDEwNzAzNg==&mid=2649444723&idx=1&sn=02997ea12ef8266fa4a33f3215d73154&chksm=f3a27000c4d5f9163d4329c135bc229aab1264b7d7425f9521cb033931a4437ce11fa2a6d705&scene=0&key=aaeb8d633a843aba523365dee8fda73d87845f44192824d8dd4cf84871e726ac055a4c083904c4a04f8e6f501cde3a0c43cd9daf9363fb036b4d520694e12b10b0f63f3d9c34031a98a7ec950b86fd9f&ascene=0&uin=MTE3NTM3MDM2Mg%3D%3D&devicetype=iMac+MacBookPro11%2C4+OSX+OSX+10.12+build(16A323)&version=12020810&nettype=WIFI&lang=zh_CN&fontScale=100&pass_ticket=VEYdd070JaMcsHgioMplIHzBk7iHQ3r53j%2F9TOeAROreljg6UXBJbdMPe1UBEcmI)
